@@ -1,0 +1,413 @@
+Traceback (most recent call last):
+  File "/www/wwwroot/nds/app.py", line 1, in <module>
+    from flask import Flask, send_from_directory, jsonify, render_template
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/www/wwwroot/nds/app.py", line 1, in <module>
+    from flask import Flask, send_from_directory, jsonify, render_template
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/www/wwwroot/nds/appnds.py", line 1, in <module>
+    from flask import Flask, send_from_directory, jsonify, render_template
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/www/wwwroot/nds/appnds.py", line 1, in <module>
+    from flask import Flask, send_from_directory, jsonify, render_template
+ModuleNotFoundError: No module named 'flask'
+Traceback (most recent call last):
+  File "/www/wwwroot/nds/appnds.py", line 1, in <module>
+    from flask import Flask, send_from_directory, jsonify, render_template
+ModuleNotFoundError: No module named 'flask'
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 12:33:40] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:33:40] "GET /files HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+61.51.149.166 - - [05/Dec/2024 12:35:10] "GET /static/index.html HTTP/1.1" 200 -
+61.51.149.166 - - [05/Dec/2024 12:35:10] "GET /files HTTP/1.1" 200 -
+61.51.149.166 - - [05/Dec/2024 12:35:12] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:12] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:12] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:24] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 12:35:24] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:25] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 12:35:25] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:25] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 12:35:25] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 12:35:26] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 12:35:26] "GET /files HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:06] "GET /static/index.html HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:06] "GET /files HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:06] "GET /favicon.ico HTTP/1.1" 404 -
+111.194.57.47 - - [05/Dec/2024 12:36:08] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:17] "GET /static/index.html HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:17] "GET /files HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:36:17] "GET /favicon.ico HTTP/1.1" 404 -
+111.194.57.47 - - [05/Dec/2024 12:37:17] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:37:18] "HEAD /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:37:32] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:37:32] "HEAD /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+218.12.18.211 - - [05/Dec/2024 12:37:34] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00')
+218.12.18.211 - - [05/Dec/2024 12:37:34] "\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03%Ó\x02\x84ª½Ù#~\x9e\x07òc\x03\x93\x10þþih-·ç$=e¾-(\x00\x176 *b\x8d¦ñ\x90ß\x15. ';¹Ô\x8dW0(\x08ý\x86¶\x02¯\x1d\x88Õê ³å¾\x00 jj\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01­êê\x00\x00\x00\x1b\x00\x03\x02\x00\x02\x00\x0b\x00\x02\x01\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00" HTTPStatus.BAD_REQUEST -
+111.194.57.47 - - [05/Dec/2024 12:37:34] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+218.12.18.211 - - [05/Dec/2024 12:37:34] code 400, message Bad request version ('\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00')
+218.12.18.211 - - [05/Dec/2024 12:37:34] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03\x08µÜ¼\x8e^T×\x1eÝ¡Áz¡\x8fýg\x83ýT¥Eißó\x12\x9e2òo\x9e© \x85ÐÝ\x97É«EgÚáý\x14r ú\x92hV|`\x0bGlÿ\x06Ý\x19,ËÁ§e\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93\x8a\x8a\x00\x00\x00\x17\x00\x00\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x10\x00\x0e\x00\x0c\x02h2\x08http/1.1\x00\x1b\x00\x03\x02\x00\x02\x00" HTTPStatus.BAD_REQUEST -
+218.12.18.211 - - [05/Dec/2024 12:37:34] "GET /static/index.html HTTP/1.1" 200 -
+218.12.18.211 - - [05/Dec/2024 12:37:34] "GET /files HTTP/1.1" 200 -
+111.194.57.47 - - [05/Dec/2024 12:37:34] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+218.12.18.211 - - [05/Dec/2024 12:37:35] "GET /favicon.ico HTTP/1.1" 404 -
+111.194.57.47 - - [05/Dec/2024 12:37:45] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:37:53] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:01] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:05] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:06] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:38:16] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:38:18] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:38:21] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:30] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:43] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+111.194.57.47 - - [05/Dec/2024 12:38:44] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:38:59] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:00] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:04] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:05] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:11] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:15] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:19] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:24] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:28] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:34] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:38] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:40] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:50] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:39:50] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:00] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:01] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:06] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:11] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.0.83.54 - - [05/Dec/2024 12:40:15] code 400, message Bad request version ('ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93JJ\x00\x00\x00')
+120.0.83.54 - - [05/Dec/2024 12:40:15] "\x16\x03\x01\x07\x00\x01\x00\x06ü\x03\x03Õ"©\x7f:ìg}\x1f\x9a«®\x86Õü+Ø\x9fàRqgA \x93{\x08\x90#Ýâ/ º\x0d\x918½¡\x8díß\x02ãJmF,¹²´ÚÕ\x89yAqòà¤¼l\x7fÔ´\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06\x93JJ\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+120.0.83.54 - - [05/Dec/2024 12:40:15] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00')
+120.0.83.54 - - [05/Dec/2024 12:40:15] "\x16\x03\x01\x06À\x01\x00\x06¼\x03\x03\x1cé\x0b\x9a\x06\x12\x18+\x8e\x13£\x8cõÑ\x8f^Ç"\x7fµÒ}\x83\x8bÈÛ`>*å"e ·±')Ý%ðkæ\x8fZ7ûÚØ\x17À5\x86\x0ddû-$ÍÐ\x90ÏBm£¿\x00 úú\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x06S\x1a\x1a\x00\x00\x00#\x00\x00Di\x00\x05\x00\x03\x02h2\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+120.0.83.54 - - [05/Dec/2024 12:40:17] "GET /static/index.html HTTP/1.1" 200 -
+223.104.40.176 - - [05/Dec/2024 12:40:17] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.0.83.54 - - [05/Dec/2024 12:40:17] "GET /files HTTP/1.1" 200 -
+120.0.83.54 - - [05/Dec/2024 12:40:17] "GET /favicon.ico HTTP/1.1" 404 -
+120.0.83.54 - - [05/Dec/2024 12:40:19] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+223.104.40.176 - - [05/Dec/2024 12:40:19] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:23] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:28] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:33] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:34] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:37] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:40] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:43] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:45] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:48] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:51] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:53] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:58] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:40:59] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:01] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:06] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:08] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:10] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:15] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:18] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:21] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:25] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:26] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:31] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:32] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:34] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:40] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:41] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:42] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:46] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:49] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:51] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:56] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:41:56] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:42:01] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:42:03] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:42:05] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+223.104.40.176 - - [05/Dec/2024 12:42:08] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 12:42:08] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+120.72.33.131 - - [05/Dec/2024 12:42:08] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 12:42:09] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 12:42:09] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+61.242.129.248 - - [05/Dec/2024 12:44:07] code 400, message Bad request version ('Ï\x9eäsÒ7')
+61.242.129.248 - - [05/Dec/2024 12:44:07] "\x16\x03\x01\x02:\x01\x00\x026\x03\x03[¾¦N<óTÄÜ\x04b\x00>Û\x11æ2âZ=?x\x1a;k\x88_\x1d¦\x11O. w\x15Û·\x88~µ¯×+$ÏC\x9fëF»ì\x1dÝrc\x0b.ò´e\x13\x9aÉ,\x98\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01ÍJJ\x00\x00\x00-\x00\x02\x01\x01\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00\x17\x00\x00\x00#\x00\x00\x00+\x00\x07\x06JJ\x03\x04\x03\x03\x00\x05\x00\x05\x01\x00\x00\x00\x00\x00\x12\x00\x00þ\x0d\x01\x1a\x00\x00\x01\x00\x01X\x00 Ê\x1f\x920\x97··¸\x85\x07g\x02è\x9c¨R¼W\x0cu\x83+\x8a!\x16\x9c:Ñk§«^\x00ðûeQ1¥\x19-±\x8d«l(\x91\x1cûô\x80#\x9fCÄ×N\x01\x97M^Í/\x8fä½ÊS\x07\\=Mï-\x15G^+\x12\x9cÍ#q9\x16)\x1en£C\x8fæ'\x8b\x8d¦°3\x0dïpÌ-Â©Ûx3­F­²¥uÒÊ¶Ê\x08þ§¬®6-\x02l×päJ\x0cR\x97'\x1dqÎ|à7èº$}ÿ´ëoB!òí|\x85\x89t\x17\x1ckÆ¡È\x86ñfxøOy\x13CLóÚ¼°\x9f Ï\x9eäsÒ7" HTTPStatus.BAD_REQUEST -
+61.242.129.248 - - [05/Dec/2024 12:44:07] code 400, message Bad request version ('\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00')
+61.242.129.248 - - [05/Dec/2024 12:44:07] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03Ìý#¬\x02|¶\x1f¹C\x0d\x84;]iá)9ì\x02$·\x0f2\x18!Ù,~2"â AZ|þ½&O\x03)´ü\x94b\x1e[´\x85þ\x89Pç}(\x81£\x11ÆähTöÿ\x00 ZZ\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01\x93êê\x00\x00Di\x00\x05\x00\x03\x02h2\x003\x00+\x00)::\x00\x01\x00\x00\x1d\x00 îz\x86bK¼k÷\x84ZÖ[Þ\x86êØH\x14\x16[\x97\x804\x18ð04r_:\x1e9\x00\x0d\x00\x12\x00\x10\x04\x03\x08\x04\x04\x01\x05\x03\x08\x05\x05\x01\x08\x06\x06\x01\x00#\x00\x00\x00\x17\x00\x00ÿ\x01\x00\x01\x00\x00\x12\x00\x00\x00" HTTPStatus.BAD_REQUEST -
+61.242.129.248 - - [05/Dec/2024 12:44:07] code 400, message Bad request version ('Ü!\x14¥\x1búØf\x8a¾\x07e\x9dd\x0eCoF\x1b,B×Òù¸#Y¯\x06ù\x9af\x00\x17\x00\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x00')
+61.242.129.248 - - [05/Dec/2024 12:44:07] "\x16\x03\x01\x02\x1a\x01\x00\x02\x16\x03\x03{\x03åã\x945ÊÇ¶ê\x16¾Dþ«D&dù\x05Í\x1eEæ\x07MO\x13\x05Úgp »9'w6ìé\x8b¢¿qä\x9dèÿpÌ[\x8bì³\x19[Ka.G]Ð.\x85S\x00 ºº\x13\x01\x13\x02\x13\x03À+À/À,À0Ì©Ì¨À\x13À\x14\x00\x9c\x00\x9d\x00/\x005\x01\x00\x01­\x1a\x1a\x00\x00\x003\x00+\x00)::\x00\x01\x00\x00\x1d\x00 Ü!\x14¥\x1búØf\x8a¾\x07e\x9dd\x0eCoF\x1b,B×Òù¸#Y¯\x06ù\x9af\x00\x17\x00\x00\x00#\x00\x00\x00-\x00\x02\x01\x01\x00" HTTPStatus.BAD_REQUEST -
+61.242.129.248 - - [05/Dec/2024 12:44:08] code 400, message Bad request syntax ('\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¸ù×Í7åEsd2NB°jù<\x04\x91')
+61.242.129.248 - - [05/Dec/2024 12:44:08] "\x16\x03\x01\x02\x00\x01\x00\x01ü\x03\x03¸ù×Í7åEsd2NB°jù<\x04\x91" HTTPStatus.BAD_REQUEST -
+61.242.129.248 - - [05/Dec/2024 12:44:08] "GET /static/index.html HTTP/1.1" 200 -
+61.242.129.248 - - [05/Dec/2024 12:44:08] "GET /files HTTP/1.1" 200 -
+61.242.129.248 - - [05/Dec/2024 12:44:08] "GET /favicon.ico HTTP/1.1" 404 -
+218.12.18.211 - - [05/Dec/2024 12:44:54] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+218.12.18.211 - - [05/Dec/2024 12:44:54] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+218.12.18.211 - - [05/Dec/2024 12:44:55] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+106.55.201.161 - - [05/Dec/2024 12:50:19] "GET /static/index.html HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 13:05:27] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:05:27] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:05:32] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:08:11] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:08:11] "GET /files HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:08:13] "GET /files_with_size HTTP/1.1" 200 -
+220.196.160.73 - - [05/Dec/2024 13:12:29] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:30] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:30] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:31] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:12:31] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:31] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:12:32] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:32] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:12:32] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:12:32] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:12:32] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:13:01] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:13:01] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:13:36] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:13:37] "GET /files_with_size HTTP/1.1" 200 -
+180.163.29.206 - - [05/Dec/2024 13:13:39] "GET /files_with_size HTTP/1.1" 200 -
+223.104.40.79 - - [05/Dec/2024 13:13:47] "GET /static/index.html HTTP/1.1" 200 -
+223.104.40.79 - - [05/Dec/2024 13:13:48] "GET /files_with_size HTTP/1.1" 200 -
+223.104.40.79 - - [05/Dec/2024 13:13:48] "GET /favicon.ico HTTP/1.1" 404 -
+223.104.40.79 - - [05/Dec/2024 13:14:03] "GET /files/逆转检事2%20完美汉化版(JP)(逆转ACE)(512Mb).nds HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:15:30] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:15:31] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:15:31] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:15:31] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:17:26] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:17:26] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:17:51] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:17:51] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:19:17] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:19:18] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:19:33] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:19:33] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:22:56] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:22:57] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:29:55] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:29:55] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:29:55] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:29:55] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:29:56] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:29:56] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:32:20] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:32:20] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:32:25] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:32:25] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:33:54] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:33:54] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:33:55] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:33:55] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:36:35] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:36:35] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:40:07] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:40:07] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:41:55] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:41:55] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 13:47:26] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:47:26] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:47:28] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:47:28] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:48:20] "GET /static/index.html HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:48:20] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:48:23] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:48:23] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:49:55] "POST /upload HTTP/1.1" 302 -
+36.112.114.2 - - [05/Dec/2024 13:49:55] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:49:55] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:02] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:02] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:05] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:05] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:06] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:06] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:10] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:50:10] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:51:01] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:51:01] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:51:45] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:51:45] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:51:57] "POST /upload HTTP/1.1" 302 -
+36.112.114.2 - - [05/Dec/2024 13:51:57] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:51:57] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:52:14] "POST /upload HTTP/1.1" 302 -
+36.112.114.2 - - [05/Dec/2024 13:52:14] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:52:15] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:52:17] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:52:17] "GET /files_with_size HTTP/1.1" 200 -
+180.101.245.250 - - [05/Dec/2024 13:54:47] "GET /upload HTTP/1.1" 405 -
+180.163.30.100 - - [05/Dec/2024 13:55:33] "GET /upload HTTP/1.1" 405 -
+36.112.114.2 - - [05/Dec/2024 13:56:40] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:56:40] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:56:41] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:56:41] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:56:44] "GET /static/index.html HTTP/1.1" 304 -
+36.112.114.2 - - [05/Dec/2024 13:56:44] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:02] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:02] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:03] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:03] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:04] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:04] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:31] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:31] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:31] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:31] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:32] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:57:32] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:09] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:09] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:09] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:10] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:10] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:10] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:11] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:11] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:12] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:12] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:12] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:12] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:49] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:49] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:49] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:50] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:50] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:50] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:52] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 13:59:52] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:00:33] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:00:33] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:03:26] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:03:26] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:08:15] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:08:15] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:10:00] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:10:00] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:10:01] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:10:01] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:10:02] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:10:02] "GET /files_with_size HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:12:48] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:12:49] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:13:10] "POST /upload HTTP/1.1" 302 -
+36.112.114.2 - - [05/Dec/2024 14:13:10] "GET / HTTP/1.1" 200 -
+ * Serving Flask app 'appnds'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:1206
+ * Running on http://10.0.20.7:1206
+Press CTRL+C to quit
+36.112.114.2 - - [05/Dec/2024 14:16:18] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:16:19] "GET /files_with_size HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:16:45] "POST /upload HTTP/1.1" 302 -
+36.112.114.2 - - [05/Dec/2024 14:16:45] "GET / HTTP/1.1" 200 -
+119.161.171.58 - - [05/Dec/2024 14:17:36] "GET / HTTP/1.1" 200 -
+119.161.171.58 - - [05/Dec/2024 14:17:38] "GET /files_with_size HTTP/1.1" 200 -
+39.144.249.22 - - [05/Dec/2024 14:17:38] "GET / HTTP/1.1" 200 -
+39.144.249.22 - - [05/Dec/2024 14:17:39] "GET /files_with_size HTTP/1.1" 200 -
+39.144.249.22 - - [05/Dec/2024 14:17:39] "GET /favicon.ico HTTP/1.1" 404 -
+36.112.114.2 - - [05/Dec/2024 14:17:44] "GET / HTTP/1.1" 200 -
+36.112.114.2 - - [05/Dec/2024 14:17:45] "GET /files_with_size HTTP/1.1" 200 -
+39.144.249.22 - - [05/Dec/2024 14:17:51] "GET /files/逆转检事2%20完美汉化版(JP)(逆转ACE)(512Mb).nds HTTP/1.1" 200 -
+223.104.40.176 - - [05/Dec/2024 14:18:07] "GET / HTTP/1.1" 200 -
+223.104.40.176 - - [05/Dec/2024 14:18:08] "GET /files_with_size HTTP/1.1" 200 -
+223.104.40.176 - - [05/Dec/2024 14:18:08] "GET /favicon.ico HTTP/1.1" 404 -
+106.52.146.234 - - [05/Dec/2024 14:18:33] "GET /static/index.html HTTP/1.1" 404 -
+111.55.24.82 - - [05/Dec/2024 14:57:37] "GET /static/index.html HTTP/1.1" 404 -
+111.55.24.82 - - [05/Dec/2024 14:57:37] "GET /favicon.ico HTTP/1.1" 404 -
+110.242.158.225 - - [05/Dec/2024 15:47:53] "GET /static/index.html申请恢复访问 HTTP/1.1" 404 -
+110.242.158.225 - - [05/Dec/2024 15:47:53] "GET /favicon.ico HTTP/1.1" 404 -
+110.242.158.225 - - [05/Dec/2024 15:48:32] "GET /static/index.html你能打开这个网站不 HTTP/1.1" 404 -
+220.196.160.83 - - [05/Dec/2024 15:52:18] "GET /static/index.html申请恢复访问 HTTP/1.1" 404 -
+180.163.29.217 - - [05/Dec/2024 15:53:22] "GET /static/index.html申请恢复访问 HTTP/1.1" 404 -
+180.101.245.248 - - [05/Dec/2024 15:54:10] "GET /static/index.html你能打开这个网站不 HTTP/1.1" 404 -
+180.101.245.251 - - [05/Dec/2024 16:52:13] "GET / HTTP/1.1" 200 -
+180.101.245.251 - - [05/Dec/2024 16:52:15] "GET /files_with_size HTTP/1.1" 200 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 200 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:27] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:31] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+120.72.33.131 - - [05/Dec/2024 17:04:31] "GET /files/游戏王GX%20精灵的召唤0710_-_Yu-Gi-Oh_GX_Spirit_Summoner_CHS_NDS-pefect.nds HTTP/1.1" 206 -
+1.203.65.48 - - [05/Dec/2024 22:33:57] "GET / HTTP/1.1" 200 -
+1.203.65.48 - - [05/Dec/2024 22:33:58] "GET /files_with_size HTTP/1.1" 200 -
+1.203.65.48 - - [05/Dec/2024 22:33:58] "GET /favicon.ico HTTP/1.1" 404 -

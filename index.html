@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文件下载</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        ul { list-style-type: none; }
+        li { margin: 5px 0; }
+        a { text-decoration: none; color: blue; }
+    </style>
+</head>
+<body>
+    <h1>文件列表</h1>
+    <ul id="file-list"></ul>
+
+    <script>
+        fetch('/files')
+            .then(response => response.json())
+            .then(files => {
+                const fileList = document.getElementById('file-list');
+                files.forEach(file => {
+                    const listItem = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = '/files/' + file;
+                    link.innerText = file;
+                    link.download = file; // 提示浏览器下载文件
+                    listItem.appendChild(link);
+                    fileList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching file list:', error));
+    </script>
+</body>
+</html>

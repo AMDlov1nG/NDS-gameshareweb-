@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏列表</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ece9e6, #ffffff);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 0 0 20px 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center; /* 垂直对齐 */
+            margin-bottom: 20px;
+        }
+
+        .search-container input[type="text"] {
+            width: 200px; /* 缩短搜索文件输入框的宽度 */
+            margin-right: 10px; /* 增加右边距 */
+            padding: 12px; /* 添加内边距 */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: border 0.3s;
+        }
+
+        input[type="password"],
+        input[type="text"].upload-input {
+            width: 250px; /* 确保用户名和密码输入框的宽度一致 */
+            padding: 12px; /* 添加内边距 */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: border 0.3s;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border: 1px solid #5cb85c;
+            outline: none;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 16px;
+            margin-right: 5px;
+        }
+
+        button:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            background: white;
+            border-radius: 5px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        th {
+            background-color: #28a745;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .file-size {
+            color: #777;
+            margin-left: 10px;
+            white-space: nowrap;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        .sorting-status {
+            text-align: center;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .pagination {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .pagination button {
+            margin: 0 5px;
+        }
+
+        .current-time {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .upload-container {
+            margin-bottom: 20px;
+        }
+
+        .upload-progress {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            margin-top: 10px;
+            display: none;
+        }
+
+        .progress-bar {
+            height: 20px;
+            width: 0;
+            background-color: #28a745;
+            border-radius: 5px;
+            transition: width 0.4s;
+        }
+
+        .alert {
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>游戏列表</h1>
+    <div class="footer">by lov1nG</div>
+
+    <div class="current-time" id="current-time"></div>
+    <div class="sorting-status" id="sorting-status">当前排序: 无</div>
+
+    <div class="upload-container">
+        <h3>管理员上传文件</h3>
+        <form id="upload-form" action="/upload" method="post" enctype="multipart/form-data">
+            <input type="text" class="upload-input" name="username" placeholder="管理员用户名" required>
+            <input type="password" class="upload-input" name="password" placeholder="管理员密码" required>
+            <input type="file" name="file" required>
+            <button type="submit">上传文件</button>
+            <div class="upload-progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </form>
+        <!-- 显示上传成功或失败消息 -->
+        <div id="upload-message" class="alert" style="display: none;"></div>
+        <!-- 显示提示消息 -->
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="alert">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="搜索文件...">
+        <button onclick="searchFiles()">搜索</button>
+    </div>
+
+    <div class="button-container">
+        <button onclick="sortByName()">按名称排序</button>
+        <button onclick="sortBySize()">按大小排序</button>
+    </div>
+
+    <table id="file-list">
+        <thead>
+            <tr>
+                <th>文件名</th>
+                <th>文件大小</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script>
+        let files = [];
+        let fileSizes = {};
+        let currentPage = 1;
+        const itemsPerPage = 30;
+
+        // 获取文件列表
+        fetch('/files_with_size')
+            .then(response => response.json())
+            .then(fileList => {
+                files = fileList.filter(file => file.name.endsWith('.nds'));
+                fileList.forEach(file => {
+                    if (file.name.endsWith('.nds')) {
+                        fileSizes[file.name] = file.size;
+                    }
+                });
+                displayFiles(files);
+                updatePagination(files.length);
+            })
+            .catch(error => console.error('Error fetching file list:', error));
+
+        function displayFiles(fileList) {
+            const fileListElement = document.getElementById('file-list').getElementsByTagName('tbody')[0];
+            fileListElement.innerHTML = '';
+
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const currentFiles = fileList.slice(startIndex, endIndex);
+
+            currentFiles.forEach(file => {
+                const row = document.createElement('tr');
+                const linkCell = document.createElement('td');
+                const sizeCell = document.createElement('td');
+
+                const link = document.createElement('a');
+                link.href = '/files/' + file.name;
+                link.innerText = file.name;
+                link.download = file.name;
+                linkCell.appendChild(link);
+
+                sizeCell.innerText = formatBytes(fileSizes[file.name]);
+
+                row.appendChild(linkCell);
+                row.appendChild(sizeCell);
+                fileListElement.appendChild(row);
+            });
+        }
+
+        function formatBytes(bytes, decimals = 2) {
+            if (!bytes) return '0 Bytes';
+            const k = 1024;
+            const dm = decimals < 0 ? 0 : decimals;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(dm)) + ' ' + sizes[i];
+        }
+
+        function searchFiles() {
+            const searchInput = document.getElementById('search').value.toLowerCase();
+            const filteredFiles = files.filter(file => file.name.toLowerCase().includes(searchInput));
+            currentPage = 1;
+            displayFiles(filteredFiles);
+            updatePagination(filteredFiles.length);
+        }
+
+        function sortByName() {
+            const sortedFiles = [...files].sort((a, b) => a.name.localeCompare(b.name));
+            displayFiles(sortedFiles);
+            document.getElementById('sorting-status').innerText = '当前排序: 按名称';
+            updatePagination(sortedFiles.length);
+        }
+
+        function sortBySize() {
+            const sortedFiles = [...files].sort((a, b) => fileSizes[a.name] - fileSizes[b.name]);
+            displayFiles(sortedFiles);
+            document.getElementById('sorting-status').innerText = '当前排序: 按大小';
+            updatePagination(sortedFiles.length);
+        }
+
+        function updatePagination(totalItems) {
+            const paginationElement = document.getElementById('pagination');
+            paginationElement.innerHTML = '';
+            const totalPages = Math.ceil(totalItems / itemsPerPage);
+
+            const firstPageButton = document.createElement('button');
+            firstPageButton.textContent = '首页';
+            firstPageButton.onclick = () => {
+                currentPage = 1;
+                displayFiles(files);
+            };
+            paginationElement.appendChild(firstPageButton);
+
+            const prevPageButton = document.createElement('button');
+            prevPageButton.textContent = '上一页';
+            prevPageButton.onclick = () => {
+                if (currentPage > 1) {
+                    currentPage--;
+                    displayFiles(files);
+                }
+            };
+            paginationElement.appendChild(prevPageButton);
+
+            const pageNumbers = Math.min(5, totalPages);
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, startPage + pageNumbers - 1);
+
+            for (let i = startPage; i <= endPage; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.textContent = i;
+                pageButton.onclick = () => {
+                    currentPage = i;
+                    displayFiles(files);
+                };
+                paginationElement.appendChild(pageButton);
+            }
+
+            const nextPageButton = document.createElement('button');
+            nextPageButton.textContent = '下一页';
+            nextPageButton.onclick = () => {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    displayFiles(files);
+                }
+            };
+            paginationElement.appendChild(nextPageButton);
+
+            const lastPageButton = document.createElement('button');
+            lastPageButton.textContent = '尾页';
+            lastPageButton.onclick = () => {
+                if (totalPages > 0) {
+                    currentPage = totalPages;
+                    displayFiles(files);
+                }
+            };
+            paginationElement.appendChild(lastPageButton);
+        }
+
+        // 更新进度条代码
+        document.getElementById('upload-form').onsubmit = function () {
+            const progressBar = document.getElementById('progress-bar');
+            const uploadProgress = document.querySelector('.upload-progress');
+            uploadProgress.style.display = 'block';
+            document.getElementById('upload-message').style.display = 'none'; // 清除之前的消息
+
+            const formData = new FormData(this);
+            const xhr = new XMLHttpRequest();
+            xhr.open('POST', this.action, true);
+
+            xhr.upload.onprogress = function (e) {
+                if (e.lengthComputable) {
+                    const percentComplete = (e.loaded / e.total) * 100;
+                    progressBar.style.width = percentComplete + '%';
+                }
+            };
+
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    // 上传成功后的处理
+                    document.getElementById('upload-message').innerText = '上传成功！';
+                    document.getElementById('upload-message').style.display = 'block';
+                } else {
+                    // 处理错误
+                    alert('上传失败！');
+                }
+            };
+
+            xhr.send(formData);
+            return false;
+        };
+
+        updateCurrentDateTime();
+        setInterval(updateCurrentDateTime, 1000);
+
+        function updateCurrentDateTime() {
+            const now = new Date();
+            const formattedDate = now.toLocaleString('zh-CN', {
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            });
+            document.getElementById('current-time').innerText = formattedDate;
+        }
+    </script>
+</body>
+</html>
